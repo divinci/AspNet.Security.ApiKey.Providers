@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>James Harling</Authors>
+    <Company>James Harling</Company>
+    <PackageLicenseUrl>https://github.com/jamesharling/AspNet.Security.ApiKey.Providers/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/jamesharling/AspNet.Security.ApiKey.Providers</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/jamesharling/AspNet.Security.ApiKey.Providers</RepositoryUrl>
+    <RepositoryType>GitHub</RepositoryType>
+    <PackageTags>aspnetcore authentication security api key apikey auth core middleware</PackageTags>
+    <Description>API Key authentication middleware for ASP.NET Core.</Description>
+    <Copyright>Copyright © James Harling</Copyright>
+    <PackageIconUrl>https://go.microsoft.com/fwlink/?LinkID=288859</PackageIconUrl>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageId>AspNet.Security.ApiKey.Providers</PackageId>
+    <AssemblyName>AspNet.Security.ApiKey.Providers</AssemblyName>
+    <Product>AspNet.Security.ApiKey.Providers</Product>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\AspNet.Security.ApiKey.Providers.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\AspNet.Security.ApiKey.Providers.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication" Version="2.0.4" />
+  </ItemGroup>
+
+</Project>
