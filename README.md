@@ -94,7 +94,7 @@ public void ConfigureServices(IServiceCollection services)
     .AddApiKey(options =>
     {
         options.Header = "X-API-KEY";
-        options.HeaderKey = "String.Empty";
+        options.HeaderKey = String.Empty;
     });
 }
 ```
